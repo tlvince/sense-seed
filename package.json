@@ -17,7 +17,6 @@
   "author": "Tom Vincent <npm@tlvince.com> (http://tlvince.com/)",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^2.3.2",
     "factory-lady": "git+https://github.com/tlvince/factory-lady.git#4ea42f187a",
     "faker": "^1.1.0"
   }
