@@ -1,0 +1,24 @@
+{
+  "name": "sense-seed",
+  "version": "0.1.0",
+  "description": "Seed data generator for the Sense Ebola suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sense",
+    "ebola",
+    "seed",
+    "stress",
+    "test",
+    "mock"
+  ],
+  "author": "Tom Vincent <npm@tlvince.com> (http://tlvince.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.3.2",
+    "factory-lady": "git+https://github.com/tlvince/factory-lady.git#4ea42f187a",
+    "faker": "^1.1.0"
+  }
+}
