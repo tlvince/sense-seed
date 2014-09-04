@@ -24,7 +24,6 @@ module.exports = {
     });
   },
   save: function save(count) {
-    count = count || 1;
     factories.forEach(function(factory) {
       for (var i = 0, len = count; i < len; i++) {
         Factory.create(factory.name);

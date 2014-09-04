@@ -3,7 +3,7 @@
 var db = require('./db');
 var factories = require('./factories');
 
-var count = process.argv[2] || 10;
+var count = process.argv[2] || 1;
 
 factories.build();
 factories.save(count);
