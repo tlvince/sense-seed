@@ -1,6 +1,6 @@
 'use strict';
 
-var faker = require('faker');
+var faker = require('../modules/faker');
 var Factory = require('factory-lady');
 var Model = require('../models');
 
@@ -46,11 +46,11 @@ module.exports = function() {
     'formhub/uuid': '077cf55983a24a82a6e89703206c079c',
     gps: '4.8168 7.0496 0 0',
     health_worker: function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     lga: 'Emuoha',
     manager: function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'meta/instanceID': 'uuid:587f93f3-36ca-4eb9-9a3f-31902fadc0d1',
     new_contact_age: function(cb) {
@@ -78,31 +78,31 @@ module.exports = function() {
       cb(faker.Helpers.randomize(['M', 'F']));
     },
     shared_conveniences: function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'signs/diarrhoea': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'signs/haemorrhagic_sign': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'signs/headache': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'signs/maculopapular_rash': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'signs/malaiase': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'signs/muscle_pain': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'signs/pharyngitis': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'signs/vomiting': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     simserial: '1c:e2:cc:b0:ea:5b',
     source_case_name: function(cb) {
@@ -124,7 +124,7 @@ module.exports = function() {
       cb(faker.Date.recent(7));
     },
     verified: function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     }
   });
 };

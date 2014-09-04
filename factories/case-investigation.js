@@ -1,6 +1,6 @@
 'use strict';
 
-var faker = require('faker');
+var faker = require('../modules/faker');
 var Factory = require('factory-lady');
 var Model = require('../models');
 
@@ -21,13 +21,13 @@ module.exports = function() {
       cb(faker.Helpers.randomize(['Positive', 'Negative']));
     },
     'HospitalizationInformation/labresult_available': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'Yes', 'No', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'HospitalizationInformation/patient_admitted': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'Yes', 'No', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'HospitalizationInformation/patient_in_isolation': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'Yes', 'No', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'PatientInformation/age': function(cb) {
       cb(faker.random.number(1, 100));

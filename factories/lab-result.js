@@ -1,6 +1,6 @@
 'use strict';
 
-var faker = require('faker');
+var faker = require('../modules/faker');
 var Factory = require('factory-lady');
 var Model = require('../models');
 
@@ -9,7 +9,7 @@ module.exports = function() {
   Factory.define('labResult', Model, {
     _formID: 20,
     'ClinicalSignsandSymptoms/AnyFever': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'ClinicalSignsandSymptoms/Comment_other_symptoms': function(cb) {
       cb(faker.Company.catchPhrase());
@@ -30,10 +30,10 @@ module.exports = function() {
       cb(faker.Company.companyName());
     },
     'HospitalizationInformation/patient_admitted': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'HospitalizationInformation/patient_in_isolation': function(cb) {
-      cb(faker.Helpers.randomize(['0', '1', 'true', 'false']));
+      cb(faker.random.booleany());
     },
     'LabInformation/date_of_results': function(cb) {
       cb(faker.Date.recent(7));
