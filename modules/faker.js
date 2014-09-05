@@ -6,8 +6,8 @@ var faker = require('faker');
 
 faker.random.booleany = function() {
   return faker.Helpers.randomize([
-    '0',
     '1',
+    '0',
     'true',
     'false',
     'Yes',
