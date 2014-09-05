@@ -84,7 +84,7 @@ module.exports = function() {
       cb(faker.Date.recent(7));
     },
     'formhub/uuid': function(cb) {
-      cb(faker.random.uuid({ unseperated: true }));
+      cb(faker.random.uuid({unseperated: true}));
     },
     'meta/instanceID': function(cb) {
       cb('uuid:' + faker.random.uuid());

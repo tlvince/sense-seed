@@ -46,7 +46,7 @@ module.exports = function() {
     deviceid: 'enketo.org:O4GNb9dhKmK9PhEk',
     endtime: '2014-09-04T16:51:20.000+01:00',
     'formhub/uuid': function(cb) {
-      cb(faker.random.uuid({ unseperated: true }));
+      cb(faker.random.uuid({unseperated: true}));
     },
     gps: '4.8168 7.0496 0 0',
     health_worker: function(cb) {
