@@ -119,14 +119,20 @@ module.exports = function() {
       cb(faker.Date.recent(7));
     },
     _tags: [],
-    _uuid: 'a3ad0e59-0ad5-4da6-9dc8-dea8f4f120b2',
+    _uuid: function(cb) {
+      cb(faker.random.uuid());
+    },
     _xform_id_string: 'EBO_LabForm2014',
     deviceid: '1c:e2:cc:b0:ea:5b',
     end: function(cb) {
       cb(faker.Date.recent(7));
     },
-    'formhub/uuid': 'dc9141be714741df94eec3ad4735f09d',
-    'meta/instanceID': 'uuid:a3ad0e59-0ad5-4da6-9dc8-dea8f4f120b3',
+    'formhub/uuid': function(cb) {
+      cb(faker.random.uuid({ unseperated: true }));
+    },
+    'meta/instanceID': function(cb) {
+      cb('uuid:' + faker.random.uuid());
+    },
     simserial: '1c:e2:cc:b0:ea:5b',
     start: function(cb) {
       cb(faker.Date.recent(7));

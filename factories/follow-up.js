@@ -21,7 +21,9 @@ module.exports = function() {
       cb(faker.Date.recent(7));
     },
     _tags: [],
-    _uuid: '587f93f3-36ca-4eb9-9a3f-31902fadc0d1',
+    _uuid: function(cb) {
+      cb(faker.random.uuid());
+    },
     _xform_id_string: 'ebola_new_contact_form_v3',
     address: function(cb) {
       cb(faker.Address.streetAddress());
@@ -43,7 +45,9 @@ module.exports = function() {
     },
     deviceid: 'enketo.org:O4GNb9dhKmK9PhEk',
     endtime: '2014-09-04T16:51:20.000+01:00',
-    'formhub/uuid': '077cf55983a24a82a6e89703206c079c',
+    'formhub/uuid': function(cb) {
+      cb(faker.random.uuid({ unseperated: true }));
+    },
     gps: '4.8168 7.0496 0 0',
     health_worker: function(cb) {
       cb(faker.random.booleany());
@@ -52,7 +56,9 @@ module.exports = function() {
     manager: function(cb) {
       cb(faker.random.booleany());
     },
-    'meta/instanceID': 'uuid:587f93f3-36ca-4eb9-9a3f-31902fadc0d1',
+    'meta/instanceID': function(cb) {
+      cb('uuid:' + faker.random.uuid());
+    },
     new_contact_age: function(cb) {
       cb(faker.random.number(0, 100));
     },
