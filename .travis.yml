@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - '0.10'
+before_script:
+  - npm install --global eslint
+notifications:
+  flowdock:
+    secure: egtVmZiu+AmX6o7BTx/hUd3GiglD5hctpdfjG/5L0wL9wU8eFzwuyARd2/g9lKPBOqTtvuSaaisKhcsm2OeLZSYdF5rOxl2ziOqfhKZPF5fEFClib2WtAvHFihZR880ake+cBvy2maNdo4tqBUHE0ek0p8CGpfZdvuQVw+gC4Po=

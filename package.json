@@ -4,7 +4,7 @@
   "description": "Seed data generator for the Sense Ebola suite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint ."
   },
   "keywords": [
     "sense",
